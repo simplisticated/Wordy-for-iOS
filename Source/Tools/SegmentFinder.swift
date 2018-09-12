@@ -54,8 +54,8 @@ internal class SegmentFinder {
             return ""
         }
         
-        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.startIndex + 1)
-        let endIndex = self.sourceText.endIndex
+        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.endIndex + 1)
+        let endIndex = self.sourceText.index(self.sourceText.endIndex, offsetBy: -1)
         return String(self.sourceText[startIndex...endIndex])
     }
     
