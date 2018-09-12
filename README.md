@@ -68,6 +68,64 @@ let filteredText = TextFilter(sourceText: "This text will be rotated")
 print(filteredText) // "рǝʇɐʇоɹ ǝq llıм ʇxǝʇ sıɥʇ"
 ```
 
+## Text Effects
+
+### Case Effect
+
+Represented by `CaseEffect` class. Changes case for the entire text or letters at particular positions.
+
+Constructor example:
+
+```swift
+CaseEffect(textCase: .firstUpperNextLower)
+```
+
+[`TextCase`](#text-case) is the only setting that defines `CaseEffect`'s behavior.
+
+### Rotation Effect
+
+Represented by `RotationEffect` class. Rotates letters. For example,
+
+`p` becomes `d`
+
+and
+
+`h` becomes `ɥ`.
+
+`RotationEffect` has two available constructors. The most detailed version of constructor:
+
+```swift
+RotationEffect(rotation: .inverted, caseSensitive: true)
+```
+
+The first parameter is a [`TextRotation`](#text-rotation) value that defines the way to rotate symbols.
+
+The second parameter of boolean type defines whether the rotation alrorithm should be case sensitive. If it equals to `false`, some uppercased symbols might become lowercased as a result of rotation.
+
+The second constructor is a simplified version of the first one:
+
+```swift
+RotationEffect(rotation: .inverted)
+```
+
+It's case sensitive by default. Usually, it's enough to use the second constructor excepting cases when you need more flexibility.
+
+### Inversion Effect
+
+Represented by `InversionEffect` class. Flips text from right to left, so
+
+`Hi!`
+
+turns into
+
+`!iH`
+
+`InversionEffect`'s constructor is very simple and doesn't require any parameters:
+
+```swift
+InversionEffect()
+```
+
 ## License
 
 `Wordy` is available under the Apache 2.0 license. See the [LICENSE](./LICENSE) file for more info.
