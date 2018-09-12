@@ -20,6 +20,7 @@ public class TextFilter {
     
     public init(sourceText: String) {
         self.sourceText = sourceText
+        self.changes = []
     }
     
     // MARK: Deinitializer
@@ -31,7 +32,57 @@ public class TextFilter {
     
     fileprivate var sourceText: String
     
+    fileprivate var changes: [TextChange]
+    
+    public var result: String {
+        get {
+            var resultText = String(self.sourceText)
+            
+            for change in self.changes {
+                let segmentFinder = SegmentFinder(sourceText: resultText)
+                
+                let substringBeforeSegment = segmentFinder.substring(before: change.segment)
+                let substringFromSegment = segmentFinder.substring(from: change.segment)
+                let substringAfterSegment = segmentFinder.substring(after: change.segment)
+                
+                let filteredSubstringFromSegment = change.effect.filteredText(from: substringFromSegment)
+                
+                resultText = substringBeforeSegment
+                    + filteredSubstringFromSegment
+                    + substringAfterSegment
+            }
+            
+            return resultText
+        }
+    }
+    
     // MARK: Public object methods
+    
+    public func apply(effect: Effect) -> Self {
+        let segment = TextSegment(
+            startIndex: 0,
+            endIndex: self.sourceText.count - 1
+        )
+        let change = TextChange(
+            effect: effect,
+            segment: segment
+        )
+        self.changes.append(change)
+        return self
+    }
+    
+    public func apply(effect: Effect, startIndex: Int, endIndex: Int) -> Self {
+        let segment = TextSegment(
+            startIndex: startIndex,
+            endIndex: endIndex
+        )
+        let change = TextChange(
+            effect: effect,
+            segment: segment
+        )
+        self.changes.append(change)
+        return self
+    }
     
     // MARK: Private object methods
     
