@@ -12,6 +12,8 @@
 		695E608721498F45001F32EF /* TextSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608621498F45001F32EF /* TextSegment.swift */; };
 		695E608921498FA7001F32EF /* TextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608821498FA7001F32EF /* TextCase.swift */; };
 		695E608B21498FF8001F32EF /* TextRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608A21498FF8001F32EF /* TextRotation.swift */; };
+		695E608D214990AF001F32EF /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608C214990AF001F32EF /* Effect.swift */; };
+		695E608F21499111001F32EF /* TextChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608E21499111001F32EF /* TextChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		695E608621498F45001F32EF /* TextSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSegment.swift; sourceTree = "<group>"; };
 		695E608821498FA7001F32EF /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
 		695E608A21498FF8001F32EF /* TextRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRotation.swift; sourceTree = "<group>"; };
+		695E608C214990AF001F32EF /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		695E608E21499111001F32EF /* TextChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				695E608621498F45001F32EF /* TextSegment.swift */,
 				695E608821498FA7001F32EF /* TextCase.swift */,
 				695E608A21498FF8001F32EF /* TextRotation.swift */,
+				695E608E21499111001F32EF /* TextChange.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		695E608221498F09001F32EF /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				695E608C214990AF001F32EF /* Effect.swift */,
 			);
 			path = Effects;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695E608F21499111001F32EF /* TextChange.swift in Sources */,
+				695E608D214990AF001F32EF /* Effect.swift in Sources */,
 				695E608721498F45001F32EF /* TextSegment.swift in Sources */,
 				695E608521498F09001F32EF /* TextFilter.swift in Sources */,
 				695E608B21498FF8001F32EF /* TextRotation.swift in Sources */,
