@@ -39,6 +39,7 @@ class MainViewController: UIViewController {
         
         let title = TextFilter(sourceText: "WORDY demo")
             .apply(effect: CaseEffect(textCase: .firstUpperNextLower))
+            .apply(effect: RotationEffect(rotation: .inverted))
             .result
         self.updateTitleLabel(withTitle: title)
     }
