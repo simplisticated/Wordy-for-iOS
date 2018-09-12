@@ -17,6 +17,7 @@
 		695E6091214991C0001F32EF /* TextRotationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6090214991C0001F32EF /* TextRotationRule.swift */; };
 		695E609321499214001F32EF /* RotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609221499214001F32EF /* RotationStore.swift */; };
 		695E6097214996D8001F32EF /* SegmentFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6096214996D8001F32EF /* SegmentFinder.swift */; };
+		695E609C21499992001F32EF /* CaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609B21499992001F32EF /* CaseEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		695E6090214991C0001F32EF /* TextRotationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRotationRule.swift; sourceTree = "<group>"; };
 		695E609221499214001F32EF /* RotationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationStore.swift; sourceTree = "<group>"; };
 		695E6096214996D8001F32EF /* SegmentFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentFinder.swift; sourceTree = "<group>"; };
+		695E609B21499992001F32EF /* CaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				695E608C214990AF001F32EF /* Effect.swift */,
+				695E609B21499992001F32EF /* CaseEffect.swift */,
 			);
 			path = Effects;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				695E608F21499111001F32EF /* TextChange.swift in Sources */,
 				695E608D214990AF001F32EF /* Effect.swift in Sources */,
 				695E609321499214001F32EF /* RotationStore.swift in Sources */,
+				695E609C21499992001F32EF /* CaseEffect.swift in Sources */,
 				695E608721498F45001F32EF /* TextSegment.swift in Sources */,
 				695E608521498F09001F32EF /* TextFilter.swift in Sources */,
 				695E608B21498FF8001F32EF /* TextRotation.swift in Sources */,
