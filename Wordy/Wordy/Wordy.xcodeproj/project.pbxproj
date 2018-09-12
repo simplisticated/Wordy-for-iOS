@@ -19,6 +19,7 @@
 		695E6097214996D8001F32EF /* SegmentFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6096214996D8001F32EF /* SegmentFinder.swift */; };
 		695E609C21499992001F32EF /* CaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609B21499992001F32EF /* CaseEffect.swift */; };
 		695E609E2149A794001F32EF /* RotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609D2149A794001F32EF /* RotationEffect.swift */; };
+		695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609F2149AD5B001F32EF /* InversionEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		695E6096214996D8001F32EF /* SegmentFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentFinder.swift; sourceTree = "<group>"; };
 		695E609B21499992001F32EF /* CaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseEffect.swift; sourceTree = "<group>"; };
 		695E609D2149A794001F32EF /* RotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationEffect.swift; sourceTree = "<group>"; };
+		695E609F2149AD5B001F32EF /* InversionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InversionEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				695E608C214990AF001F32EF /* Effect.swift */,
 				695E609B21499992001F32EF /* CaseEffect.swift */,
 				695E609D2149A794001F32EF /* RotationEffect.swift */,
+				695E609F2149AD5B001F32EF /* InversionEffect.swift */,
 			);
 			path = Effects;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				695E6091214991C0001F32EF /* TextRotationRule.swift in Sources */,
 				695E608F21499111001F32EF /* TextChange.swift in Sources */,
+				695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */,
 				695E608D214990AF001F32EF /* Effect.swift in Sources */,
 				695E609321499214001F32EF /* RotationStore.swift in Sources */,
 				695E609C21499992001F32EF /* CaseEffect.swift in Sources */,
