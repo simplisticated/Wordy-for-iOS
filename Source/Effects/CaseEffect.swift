@@ -76,7 +76,7 @@ extension CaseEffect: Effect {
                 
                 if sourceText.count > 1 {
                     let otherTextStartIndex = sourceText.index(sourceText.startIndex, offsetBy: 1)
-                    let otherTextEndIndex = sourceText.endIndex
+                    let otherTextEndIndex = sourceText.index(sourceText.endIndex, offsetBy: -1)
                     otherText = String(sourceText[otherTextStartIndex...otherTextEndIndex])
                 }
                 
