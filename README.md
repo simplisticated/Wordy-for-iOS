@@ -40,7 +40,7 @@ or
 
 First of all, you need to get to know `TextFilter` class. Instance of `TextFilter` is your entry point to the world of amazing effects. Look at example below:
 
-```java
+```swift
 let invertedText = TextFilter(sourceText: "Hi!")
     .apply(effect: InversionEffect())
     .result
@@ -51,7 +51,7 @@ This is how it works. You have to get an instance of `TextFilter` and transfer s
 
 In the example above, the `InversionEffect` will be applied to the entire string. The same time, you can apply effect to a particular substring:
 
-```java
+```swift
 let filteredText = TextFilter(sourceText: "Hi!")
     .apply(effect: InversionEffect())
     .apply(effect: InversionEffect(), startIndex: 0, endIndex: 1)
@@ -61,7 +61,7 @@ print(filteredText) // "iH!"
 
 You can add as many effects as you want:
 
-```java
+```swift
 let filteredText = TextFilter(sourceText: "This text will be rotated")
     .apply(effect: RotationEffect(rotation: .inverted))
     .apply(effect: InversionEffect())
