@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
 Powerful text processor that provides an easy way to manage content in String object.
                    DESC
 
-  s.homepage     = "https://github.com/igormatyushkin014/Wordy"
-  s.screenshots  = "https://github.com/igormatyushkin014/Wordy/raw/master/Images/logo_2048_2048.png"
+  s.homepage     = "https://github.com/igormatyushkin014/Wordy-for-iOS"
+  s.screenshots  = "https://github.com/igormatyushkin014/Wordy-for-iOS/raw/master/Images/logo_2048_2048.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +80,7 @@ Powerful text processor that provides an easy way to manage content in String ob
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/igormatyushkin014/Wordy.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/igormatyushkin014/Wordy-for-iOS.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
