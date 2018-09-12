@@ -132,18 +132,18 @@ InversionEffect()
 
 `TextCase` is used as a setting for `CaseEffect` instance. Available values are:
 
-- `.allUpper` - Makes the entire text uppercased.
-- `.allLower` - Makes the entire text lowercased.
-- `.firstUpperNextLower` - The first symbol is uppercased, other text is lowercased.
-- `.firstLowerNextUpper` - The first symbol is lowercased, other text is uppercased.
+- `allUpper` - Makes the entire text uppercased.
+- `allLower` - Makes the entire text lowercased.
+- `firstUpperNextLower` - The first symbol is uppercased, other text is lowercased.
+- `firstLowerNextUpper` - The first symbol is lowercased, other text is uppercased.
 
 ### Text Rotation
 
 `TextRotation` defines the conditions of symbol rotation. Available values:
 
-- `.normal`: Forces all symbols to be rotated to normal position. It means that `ʎ` would become `y` and `h` would stay `h`.
-- `.upsideDown`: Forces all symbols to be rotated upside down. In this case, `y` would turn into `ʎ`, but `ɥ` wouldn't change at all.
-- `.inverted`: Normal symbols are forced to be rotated meanwhile rotated symbols become normal. So, `y` becomes `ʎ` and `ɥ` turns into `h`.
+- `normal`: Forces all symbols to be rotated to normal position. It means that `ʎ` would become `y` and `h` would stay `h`.
+- `upsideDown`: Forces all symbols to be rotated upside down. In this case, `y` would turn into `ʎ`, but `ɥ` wouldn't change at all.
+- `inverted`: Normal symbols are forced to be rotated meanwhile rotated symbols become normal. So, `y` becomes `ʎ` and `ɥ` turns into `h`.
 
 ## License
 
