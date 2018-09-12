@@ -34,15 +34,21 @@ internal class SegmentFinder {
     // MARK: Public object methods
     
     public func substring(before segment: TextSegment) -> String {
-        return ""
+        let startIndex = self.sourceText.startIndex
+        let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.startIndex - 1)
+        return String(self.sourceText[startIndex...endIndex])
     }
     
     public func substring(from segment: TextSegment) -> String {
-        return ""
+        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.startIndex)
+        let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.endIndex)
+        return String(self.sourceText[startIndex...endIndex])
     }
     
     public func substring(after segment: TextSegment) -> String {
-        return ""
+        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.startIndex + 1)
+        let endIndex = self.sourceText.endIndex
+        return String(self.sourceText[startIndex...endIndex])
     }
     
     // MARK: Private object methods
