@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		695E607621498DFC001F32EF /* Wordy.h in Headers */ = {isa = PBXBuildFile; fileRef = 695E607421498DFC001F32EF /* Wordy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		695E607E21498E14001F32EF /* TextFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E607D21498E14001F32EF /* TextFilter.swift */; };
+		695E608521498F09001F32EF /* TextFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608021498F09001F32EF /* TextFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		695E607121498DFC001F32EF /* Wordy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wordy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		695E607421498DFC001F32EF /* Wordy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wordy.h; sourceTree = "<group>"; };
 		695E607521498DFC001F32EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		695E607D21498E14001F32EF /* TextFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFilter.swift; sourceTree = "<group>"; };
+		695E608021498F09001F32EF /* TextFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,50 @@
 		695E607C21498E09001F32EF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				695E607D21498E14001F32EF /* TextFilter.swift */,
+				695E608321498F09001F32EF /* Classes */,
+				695E608121498F09001F32EF /* Types */,
+				695E608421498F09001F32EF /* Data */,
+				695E608221498F09001F32EF /* Effects */,
+				695E607F21498F09001F32EF /* Tools */,
 			);
 			name = Source;
 			path = ../../../Source;
+			sourceTree = "<group>";
+		};
+		695E607F21498F09001F32EF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				695E608021498F09001F32EF /* TextFilter.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		695E608121498F09001F32EF /* Types */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		695E608221498F09001F32EF /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		695E608321498F09001F32EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		695E608421498F09001F32EF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				695E607E21498E14001F32EF /* TextFilter.swift in Sources */,
+				695E608521498F09001F32EF /* TextFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
