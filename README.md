@@ -36,7 +36,38 @@ or
 
 ## Usage
 
-The project is currently in development. Documentation will be uploaded soon.
+### Text Filter
+
+First of all, you need to get to know `TextFilter` class. Instance of `TextFilter` is your entry point to the world of amazing effects. Look at example below:
+
+```java
+let invertedText = TextFilter(sourceText: "Hi!")
+    .apply(effect: InversionEffect())
+    .result
+print(invertedText) // "!iH"
+```
+
+This is how it works. You have to get an instance of `TextFilter` and transfer source text to it. Then, apply some effects and retrieve the final text by `.result` call.
+
+In the example above, the `InversionEffect` will be applied to the entire string. The same time, you can apply effect to a particular substring:
+
+```java
+let filteredText = TextFilter(sourceText: "Hi!")
+    .apply(effect: InversionEffect())
+    .apply(effect: InversionEffect(), startIndex: 0, endIndex: 1)
+    .result
+print(filteredText) // "iH!"
+```
+
+You can add as many effects as you want:
+
+```java
+let filteredText = TextFilter(sourceText: "This text will be rotated")
+    .apply(effect: RotationEffect(rotation: .inverted))
+    .apply(effect: InversionEffect())
+    .result
+print(filteredText) // "рǝʇɐʇоɹ ǝq llıм ʇxǝʇ sıɥʇ"
+```
 
 ## License
 
