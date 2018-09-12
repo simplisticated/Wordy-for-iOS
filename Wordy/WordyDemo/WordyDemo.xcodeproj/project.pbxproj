@@ -12,6 +12,7 @@
 		695E606021498B56001F32EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695E605F21498B56001F32EF /* LaunchScreen.xib */; };
 		695E606521498BED001F32EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E606321498BED001F32EF /* MainViewController.swift */; };
 		695E606621498BED001F32EF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695E606421498BED001F32EF /* MainViewController.xib */; };
+		695E609A21499757001F32EF /* Wordy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695E609921499757001F32EF /* Wordy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		695E605F21498B56001F32EF /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		695E606321498BED001F32EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		695E606421498BED001F32EF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		695E609921499757001F32EF /* Wordy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wordy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695E609A21499757001F32EF /* Wordy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				695E604C21498B36001F32EF /* WordyDemo */,
+				695E609821499748001F32EF /* Frameworks */,
 				695E604B21498B36001F32EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +82,14 @@
 				695E606421498BED001F32EF /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		695E609821499748001F32EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				695E609921499757001F32EF /* Wordy.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
