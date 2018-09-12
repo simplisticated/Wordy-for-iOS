@@ -41,10 +41,10 @@ or
 First of all, you need to get to know `TextFilter` class. Instance of `TextFilter` is your entry point to the world of amazing effects. Look at example below:
 
 ```swift
-let invertedText = TextFilter(sourceText: "Hi!")
+let filteredText = TextFilter(sourceText: "Hi!")
     .apply(effect: InversionEffect())
     .result
-print(invertedText) // "!iH"
+print(filteredText) // "!iH"
 ```
 
 This is how it works. You have to get an instance of `TextFilter` and transfer source text to it. Then, apply some effects and retrieve the final text by `.result` call.
@@ -53,7 +53,6 @@ In the example above, the `InversionEffect` will be applied to the entire string
 
 ```swift
 let filteredText = TextFilter(sourceText: "Hi!")
-    .apply(effect: InversionEffect())
     .apply(effect: InversionEffect(), startIndex: 0, endIndex: 1)
     .result
 print(filteredText) // "iH!"
