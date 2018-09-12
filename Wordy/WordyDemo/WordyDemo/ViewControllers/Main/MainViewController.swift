@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Wordy
 
 class MainViewController: UIViewController {
     
@@ -36,7 +37,9 @@ class MainViewController: UIViewController {
         
         self.initializeTitleLabel()
         
-        let title = "WORDY demo"
+        let title = TextFilter(sourceText: "WORDY demo")
+            .apply(effect: CaseEffect(textCase: .firstUpperNextLower))
+            .result
         self.updateTitleLabel(withTitle: title)
     }
     
