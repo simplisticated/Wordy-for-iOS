@@ -37,6 +37,14 @@ public class InversionEffect {
 extension InversionEffect: Effect {
     
     public func filteredText(from sourceText: String) -> String {
-        return ""
+        var resultText = ""
+        
+        for letterIndex in stride(from: sourceText.count - 1, through: 0, by: -1) {
+            let letterStringIndex = sourceText.index(sourceText.startIndex, offsetBy: letterIndex)
+            let letter = String(sourceText[letterStringIndex...letterStringIndex])
+            resultText += letter
+        }
+        
+        return resultText
     }
 }
