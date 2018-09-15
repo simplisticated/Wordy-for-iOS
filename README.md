@@ -136,6 +136,7 @@ InversionEffect()
 - `allLower` - Makes the entire text lowercased.
 - `firstUpperNextLower` - The first symbol is uppercased, other text is lowercased.
 - `firstLowerNextUpper` - The first symbol is lowercased, other text is uppercased.
+- `alternating(firstUppercased: Bool)`: If `firstUppercased` is `true`, odd symbols are uppercased, even symbols are lowercased. Otherwise, odd symbols are lowercased, even symbols are uppercased.
 
 ### Text Rotation
 
