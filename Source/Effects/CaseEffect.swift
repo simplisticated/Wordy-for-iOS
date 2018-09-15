@@ -83,6 +83,26 @@ extension CaseEffect: Effect {
                 return firstLetter.lowercased()
                     + otherText.uppercased()
             }
+        case .alternating(let firstUppercased):
+            if sourceText.isEmpty {
+                return ""
+            } else {
+                var filteredText = ""
+                let textLength = sourceText.count
+                
+                for letterIndex in 0..<textLength {
+                    let sourceLetterStringIndex = sourceText.index(sourceText.startIndex, offsetBy: letterIndex)
+                    let sourceLetter = String(sourceText[sourceLetterStringIndex...sourceLetterStringIndex])
+                    
+                    let isEvenLetterIndex = letterIndex % 2 == 0
+                    let shouldMakeLetterUppercased = (isEvenLetterIndex && firstUppercased)
+                        || (!isEvenLetterIndex && !firstUppercased)
+                    let resultLetter = shouldMakeLetterUppercased ? sourceLetter.uppercased() : sourceLetter.lowercased()
+                    filteredText += resultLetter
+                }
+                
+                return filteredText
+            }
         }
     }
     
