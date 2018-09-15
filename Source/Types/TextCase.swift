@@ -13,4 +13,5 @@ public enum TextCase {
     case allLower
     case firstUpperNextLower
     case firstLowerNextUpper
+    case alternating(firstUppercased: Bool)
 }
