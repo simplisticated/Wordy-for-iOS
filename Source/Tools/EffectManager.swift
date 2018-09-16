@@ -41,15 +41,15 @@ public class EffectManager {
             for change in self.changes {
                 let segmentFinder = SegmentFinder(sourceText: resultText)
                 
-                let substringBeforeSegment = segmentFinder.substring(before: change.segment)
-                let substringFromSegment = segmentFinder.substring(from: change.segment)
-                let substringAfterSegment = segmentFinder.substring(after: change.segment)
+                let substringBeforeSelectedLocation = segmentFinder.substring(before: change.location)
+                let substringFromSelectedLocation = segmentFinder.substring(from: change.location)
+                let substringAfterSelectedLocation = segmentFinder.substring(after: change.location)
                 
-                let filteredSubstringFromSegment = change.effect.filteredText(from: substringFromSegment)
+                let filteredSubstringFromSelectedLocation = change.effect.filteredText(from: substringFromSelectedLocation)
                 
-                resultText = substringBeforeSegment
-                    + filteredSubstringFromSegment
-                    + substringAfterSegment
+                resultText = substringBeforeSelectedLocation
+                    + filteredSubstringFromSelectedLocation
+                    + substringAfterSelectedLocation
             }
             
             return resultText
@@ -59,26 +59,26 @@ public class EffectManager {
     // MARK: Public object methods
     
     public func apply(effect: Effect) -> Self {
-        let segment = TextSegment(
+        let location = SubstringLocation(
             startIndex: 0,
             endIndex: self.sourceText.count - 1
         )
         let change = TextChange(
             effect: effect,
-            segment: segment
+            location: location
         )
         self.changes.append(change)
         return self
     }
     
     public func apply(effect: Effect, startIndex: Int, endIndex: Int) -> Self {
-        let segment = TextSegment(
+        let location = SubstringLocation(
             startIndex: startIndex,
             endIndex: endIndex
         )
         let change = TextChange(
             effect: effect,
-            segment: segment
+            location: location
         )
         self.changes.append(change)
         return self
