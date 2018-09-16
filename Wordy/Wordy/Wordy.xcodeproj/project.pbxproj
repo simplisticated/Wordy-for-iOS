@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		695E607621498DFC001F32EF /* Wordy.h in Headers */ = {isa = PBXBuildFile; fileRef = 695E607421498DFC001F32EF /* Wordy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		695E608521498F09001F32EF /* EffectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608021498F09001F32EF /* EffectManager.swift */; };
-		695E608721498F45001F32EF /* TextSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608621498F45001F32EF /* TextSegment.swift */; };
+		695E608721498F45001F32EF /* SubstringLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608621498F45001F32EF /* SubstringLocation.swift */; };
 		695E608921498FA7001F32EF /* TextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608821498FA7001F32EF /* TextCase.swift */; };
 		695E608B21498FF8001F32EF /* TextRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608A21498FF8001F32EF /* TextRotation.swift */; };
 		695E608D214990AF001F32EF /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608C214990AF001F32EF /* Effect.swift */; };
@@ -27,7 +27,7 @@
 		695E607421498DFC001F32EF /* Wordy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wordy.h; sourceTree = "<group>"; };
 		695E607521498DFC001F32EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		695E608021498F09001F32EF /* EffectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectManager.swift; sourceTree = "<group>"; };
-		695E608621498F45001F32EF /* TextSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSegment.swift; sourceTree = "<group>"; };
+		695E608621498F45001F32EF /* SubstringLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringLocation.swift; sourceTree = "<group>"; };
 		695E608821498FA7001F32EF /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
 		695E608A21498FF8001F32EF /* TextRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRotation.swift; sourceTree = "<group>"; };
 		695E608C214990AF001F32EF /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		695E608121498F09001F32EF /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				695E608621498F45001F32EF /* TextSegment.swift */,
+				695E608621498F45001F32EF /* SubstringLocation.swift */,
 				695E608821498FA7001F32EF /* TextCase.swift */,
 				695E608A21498FF8001F32EF /* TextRotation.swift */,
 				695E608E21499111001F32EF /* TextChange.swift */,
@@ -222,7 +222,7 @@
 				695E608D214990AF001F32EF /* Effect.swift in Sources */,
 				695E609321499214001F32EF /* RotationStore.swift in Sources */,
 				695E609C21499992001F32EF /* CaseEffect.swift in Sources */,
-				695E608721498F45001F32EF /* TextSegment.swift in Sources */,
+				695E608721498F45001F32EF /* SubstringLocation.swift in Sources */,
 				695E608521498F09001F32EF /* EffectManager.swift in Sources */,
 				695E608B21498FF8001F32EF /* TextRotation.swift in Sources */,
 				695E609E2149A794001F32EF /* RotationEffect.swift in Sources */,
