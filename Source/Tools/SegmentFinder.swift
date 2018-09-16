@@ -33,28 +33,28 @@ internal class SegmentFinder {
     
     // MARK: Public object methods
     
-    public func substring(before segment: TextSegment) -> String {
-        guard segment.startIndex > 0 else {
+    public func substring(before location: SubstringLocation) -> String {
+        guard location.startIndex > 0 else {
             return ""
         }
         
         let startIndex = self.sourceText.startIndex
-        let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.startIndex - 1)
+        let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: location.startIndex - 1)
         return String(self.sourceText[startIndex...endIndex])
     }
     
-    public func substring(from segment: TextSegment) -> String {
-        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.startIndex)
-        let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.endIndex)
+    public func substring(from location: SubstringLocation) -> String {
+        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: location.startIndex)
+        let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: location.endIndex)
         return String(self.sourceText[startIndex...endIndex])
     }
     
-    public func substring(after segment: TextSegment) -> String {
-        guard segment.endIndex < self.sourceText.count - 1 else {
+    public func substring(after location: SubstringLocation) -> String {
+        guard location.endIndex < self.sourceText.count - 1 else {
             return ""
         }
         
-        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: segment.endIndex + 1)
+        let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: location.endIndex + 1)
         let endIndex = self.sourceText.index(self.sourceText.endIndex, offsetBy: -1)
         return String(self.sourceText[startIndex...endIndex])
     }
