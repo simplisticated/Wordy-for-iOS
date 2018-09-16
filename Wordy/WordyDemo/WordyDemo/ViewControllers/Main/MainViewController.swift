@@ -37,7 +37,7 @@ class MainViewController: UIViewController {
         
         self.initializeTitleLabel()
         
-        let title = EffectManager(sourceText: "WORDY demo")
+        let title = Wordy.effects(for: "WORDY demo")
             .apply(effect: CaseEffect(textCase: .firstUpperNextLower))
             .apply(effect: RotationEffect(rotation: .inverted))
             .apply(effect: InversionEffect())
