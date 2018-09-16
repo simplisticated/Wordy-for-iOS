@@ -16,7 +16,7 @@
 		695E608F21499111001F32EF /* TextChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608E21499111001F32EF /* TextChange.swift */; };
 		695E6091214991C0001F32EF /* TextRotationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6090214991C0001F32EF /* TextRotationRule.swift */; };
 		695E609321499214001F32EF /* RotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609221499214001F32EF /* RotationStore.swift */; };
-		695E6097214996D8001F32EF /* SegmentFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6096214996D8001F32EF /* SegmentFinder.swift */; };
+		695E6097214996D8001F32EF /* SubstringFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6096214996D8001F32EF /* SubstringFinder.swift */; };
 		695E609C21499992001F32EF /* CaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609B21499992001F32EF /* CaseEffect.swift */; };
 		695E609E2149A794001F32EF /* RotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609D2149A794001F32EF /* RotationEffect.swift */; };
 		695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609F2149AD5B001F32EF /* InversionEffect.swift */; };
@@ -34,7 +34,7 @@
 		695E608E21499111001F32EF /* TextChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChange.swift; sourceTree = "<group>"; };
 		695E6090214991C0001F32EF /* TextRotationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRotationRule.swift; sourceTree = "<group>"; };
 		695E609221499214001F32EF /* RotationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationStore.swift; sourceTree = "<group>"; };
-		695E6096214996D8001F32EF /* SegmentFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentFinder.swift; sourceTree = "<group>"; };
+		695E6096214996D8001F32EF /* SubstringFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringFinder.swift; sourceTree = "<group>"; };
 		695E609B21499992001F32EF /* CaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseEffect.swift; sourceTree = "<group>"; };
 		695E609D2149A794001F32EF /* RotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationEffect.swift; sourceTree = "<group>"; };
 		695E609F2149AD5B001F32EF /* InversionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InversionEffect.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				695E608021498F09001F32EF /* EffectManager.swift */,
-				695E6096214996D8001F32EF /* SegmentFinder.swift */,
+				695E6096214996D8001F32EF /* SubstringFinder.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 				695E608B21498FF8001F32EF /* TextRotation.swift in Sources */,
 				695E609E2149A794001F32EF /* RotationEffect.swift in Sources */,
 				695E608921498FA7001F32EF /* TextCase.swift in Sources */,
-				695E6097214996D8001F32EF /* SegmentFinder.swift in Sources */,
+				695E6097214996D8001F32EF /* SubstringFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
