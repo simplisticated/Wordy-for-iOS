@@ -20,6 +20,7 @@
 		695E609C21499992001F32EF /* CaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609B21499992001F32EF /* CaseEffect.swift */; };
 		695E609E2149A794001F32EF /* RotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609D2149A794001F32EF /* RotationEffect.swift */; };
 		695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609F2149AD5B001F32EF /* InversionEffect.swift */; };
+		69C274F3214EE946009D2AA8 /* Wordy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C274F2214EE946009D2AA8 /* Wordy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		695E609B21499992001F32EF /* CaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseEffect.swift; sourceTree = "<group>"; };
 		695E609D2149A794001F32EF /* RotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationEffect.swift; sourceTree = "<group>"; };
 		695E609F2149AD5B001F32EF /* InversionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InversionEffect.swift; sourceTree = "<group>"; };
+		69C274F2214EE946009D2AA8 /* Wordy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				695E608421498F09001F32EF /* Data */,
 				695E608221498F09001F32EF /* Effects */,
 				695E607F21498F09001F32EF /* Tools */,
+				69C274F1214EE934009D2AA8 /* Bridge */,
 			);
 			name = Source;
 			path = ../../../Source;
@@ -135,6 +138,14 @@
 				695E609221499214001F32EF /* RotationStore.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		69C274F1214EE934009D2AA8 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				69C274F2214EE946009D2AA8 /* Wordy.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				695E608D214990AF001F32EF /* Effect.swift in Sources */,
 				695E609321499214001F32EF /* RotationStore.swift in Sources */,
 				695E609C21499992001F32EF /* CaseEffect.swift in Sources */,
+				69C274F3214EE946009D2AA8 /* Wordy.swift in Sources */,
 				695E608721498F45001F32EF /* SubstringLocation.swift in Sources */,
 				695E608521498F09001F32EF /* EffectManager.swift in Sources */,
 				695E608B21498FF8001F32EF /* TextRotation.swift in Sources */,
