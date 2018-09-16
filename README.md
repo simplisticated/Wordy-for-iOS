@@ -3,7 +3,7 @@
 </p>
 <p align="center">
 	<a href="https://swift.org">
-		<img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat">
+		<img src="https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat">
 	</a>
 	<a href="https://cocoapods.org">
 		<img src="https://img.shields.io/cocoapods/v/Wordy.svg">
@@ -32,7 +32,7 @@ or
 
 * iOS 9 and later
 * Xcode 9 and later
-* Swift 4
+* Swift 4.1
 
 ## Usage
 
