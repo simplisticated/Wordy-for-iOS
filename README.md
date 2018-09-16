@@ -36,23 +36,25 @@ or
 
 ## Usage
 
-### Text Filter
+Everything starts with `Wordy` class. This is your entry point to all tools provided by the library.
 
-First of all, you need to get to know `TextFilter` class. Instance of `TextFilter` is your entry point to the world of amazing effects. Look at example below:
+### Text Effects
+
+Let's start with a very simple example of text effect:
 
 ```swift
-let filteredText = TextFilter(sourceText: "Hi!")
+let filteredText = Wordy.effects(for: "Hi!")
     .apply(effect: InversionEffect())
     .result
 print(filteredText) // "!iH"
 ```
 
-This is how it works. You have to get an instance of `TextFilter` and transfer source text to it. Then, apply some effects and retrieve the final text by `.result` call.
+This is how it works: `Wordy.effects(for: _)` gives you an `EffectManager` instance configured for your source text. Then, you can apply some effects and retrieve the final text by `.result` call.
 
 In the example above, the `InversionEffect` will be applied to the entire string. The same time, you can apply effect to a particular substring:
 
 ```swift
-let filteredText = TextFilter(sourceText: "Hi!")
+let filteredText = Wordy.effects(for: "Hi!")
     .apply(effect: InversionEffect(), startIndex: 0, endIndex: 1)
     .result
 print(filteredText) // "iH!"
@@ -61,16 +63,14 @@ print(filteredText) // "iH!"
 You can add as many effects as you want:
 
 ```swift
-let filteredText = TextFilter(sourceText: "This text will be rotated")
+let filteredText = Wordy.effects(for: "This text will be rotated")
     .apply(effect: RotationEffect(rotation: .inverted))
     .apply(effect: InversionEffect())
     .result
 print(filteredText) // "рǝʇɐʇоɹ ǝq llıм ʇxǝʇ sıɥʇ"
 ```
 
-## Text Effects
-
-### Case Effect
+#### Case Effect
 
 Represented by `CaseEffect` class. Changes case for the entire text or letters at particular positions.
 
@@ -82,7 +82,7 @@ CaseEffect(textCase: .firstUpperNextLower)
 
 [`TextCase`](#text-case) is the only setting that defines `CaseEffect`'s behavior.
 
-### Rotation Effect
+#### Rotation Effect
 
 Represented by `RotationEffect` class. Rotates letters. For example,
 
@@ -110,7 +110,7 @@ RotationEffect(rotation: .inverted)
 
 It's case sensitive by default. Usually, it's enough to use the second constructor excepting cases when you need more flexibility.
 
-### Inversion Effect
+#### Inversion Effect
 
 Represented by `InversionEffect` class. Flips text from right to left, so
 
@@ -126,9 +126,9 @@ turns into
 InversionEffect()
 ```
 
-## Options
+### Options
 
-### Text Case
+#### Text Case
 
 `TextCase` is used as a setting for `CaseEffect` instance. Available values are:
 
@@ -138,7 +138,7 @@ InversionEffect()
 - `firstLowerNextUpper` - The first symbol is lowercased, other text is uppercased.
 - `alternating(firstUppercased: Bool)`: If `firstUppercased` is `true`, odd symbols are uppercased, even symbols are lowercased. Otherwise, odd symbols are lowercased, even symbols are uppercased.
 
-### Text Rotation
+#### Text Rotation
 
 `TextRotation` defines the conditions of symbol rotation. Available values:
 
