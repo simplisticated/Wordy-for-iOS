@@ -1,5 +1,5 @@
 //
-//  TextFilter.swift
+//  EffectManager.swift
 //  Wordy
 //
 //  Created by Igor Matyushkin on 12.09.2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class TextFilter {
+public class EffectManager {
     
     // MARK: Class variables & properties
     
