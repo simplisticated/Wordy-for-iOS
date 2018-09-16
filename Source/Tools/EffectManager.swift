@@ -39,11 +39,11 @@ public class EffectManager {
             var resultText = String(self.sourceText)
             
             for change in self.changes {
-                let segmentFinder = SegmentFinder(sourceText: resultText)
+                let substringFinder = SubstringFinder(sourceText: resultText)
                 
-                let substringBeforeSelectedLocation = segmentFinder.substring(before: change.location)
-                let substringFromSelectedLocation = segmentFinder.substring(from: change.location)
-                let substringAfterSelectedLocation = segmentFinder.substring(after: change.location)
+                let substringBeforeSelectedLocation = substringFinder.substring(before: change.location)
+                let substringFromSelectedLocation = substringFinder.substring(from: change.location)
+                let substringAfterSelectedLocation = substringFinder.substring(after: change.location)
                 
                 let filteredSubstringFromSelectedLocation = change.effect.filteredText(from: substringFromSelectedLocation)
                 
