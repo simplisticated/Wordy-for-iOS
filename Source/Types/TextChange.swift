@@ -10,5 +10,5 @@ import Foundation
 
 internal struct TextChange {
     public var effect: Effect
-    public var segment: TextSegment
+    public var location: SubstringLocation
 }
