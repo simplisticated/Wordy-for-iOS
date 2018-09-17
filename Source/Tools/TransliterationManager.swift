@@ -37,7 +37,59 @@ public class TransliterationManager {
     // MARK: Public object methods
     
     public func result(for sourceText: String) -> String {
-        return ""
+        let rules = TransliterationStore().rules(forTransliterationFrom: self.sourceLanguage, to: self.targetLanguage)
+        var resultText = String(sourceText)
+        
+        for rule in rules {
+            if rule.replaceable.count == 1 {
+                resultText = resultText.replacingOccurrences(
+                    of: EffectManager(sourceText: rule.replaceable)
+                        .apply(effect: CaseEffect(textCase: .allUpper))
+                        .result,
+                    with: EffectManager(sourceText: rule.replacement)
+                        .apply(effect: CaseEffect(textCase: .firstUpperNextLower))
+                        .result
+                )
+            } else {
+                resultText = resultText.replacingOccurrences(
+                    of: EffectManager(sourceText: rule.replaceable)
+                        .apply(effect: CaseEffect(textCase: .allUpper))
+                        .result,
+                    with: EffectManager(sourceText: rule.replacement)
+                        .apply(effect: CaseEffect(textCase: .allUpper))
+                        .result
+                )
+                
+                resultText = resultText.replacingOccurrences(
+                    of: EffectManager(sourceText: rule.replaceable)
+                        .apply(effect: CaseEffect(textCase: .firstUpperNextLower))
+                        .result,
+                    with: EffectManager(sourceText: rule.replacement)
+                        .apply(effect: CaseEffect(textCase: .firstUpperNextLower))
+                        .result
+                )
+                
+                resultText = resultText.replacingOccurrences(
+                    of: EffectManager(sourceText: rule.replaceable)
+                        .apply(effect: CaseEffect(textCase: .firstLowerNextUpper))
+                        .result,
+                    with: EffectManager(sourceText: rule.replacement)
+                        .apply(effect: CaseEffect(textCase: .firstLowerNextUpper))
+                        .result
+                )
+            }
+            
+            resultText = resultText.replacingOccurrences(
+                of: EffectManager(sourceText: rule.replaceable)
+                    .apply(effect: CaseEffect(textCase: .allLower))
+                    .result,
+                with: EffectManager(sourceText: rule.replacement)
+                    .apply(effect: CaseEffect(textCase: .allLower))
+                    .result
+            )
+        }
+        
+        return resultText
     }
     
     // MARK: Private object methods
