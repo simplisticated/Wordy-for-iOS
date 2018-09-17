@@ -14,14 +14,14 @@
 		695E608B21498FF8001F32EF /* TextRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608A21498FF8001F32EF /* TextRotation.swift */; };
 		695E608D214990AF001F32EF /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608C214990AF001F32EF /* Effect.swift */; };
 		695E608F21499111001F32EF /* TextChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E608E21499111001F32EF /* TextChange.swift */; };
-		695E6091214991C0001F32EF /* TextRotationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6090214991C0001F32EF /* TextRotationRule.swift */; };
-		695E609321499214001F32EF /* RotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609221499214001F32EF /* RotationStore.swift */; };
 		695E6097214996D8001F32EF /* SubstringFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E6096214996D8001F32EF /* SubstringFinder.swift */; };
 		695E609C21499992001F32EF /* CaseEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609B21499992001F32EF /* CaseEffect.swift */; };
 		695E609E2149A794001F32EF /* RotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609D2149A794001F32EF /* RotationEffect.swift */; };
 		695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E609F2149AD5B001F32EF /* InversionEffect.swift */; };
 		69AFA229214FD6F50075A26F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA228214FD6F50075A26F /* Language.swift */; };
 		69AFA22B214FD7250075A26F /* TransliterationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA22A214FD7250075A26F /* TransliterationManager.swift */; };
+		69AFA230214FD8330075A26F /* RotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA22E214FD8330075A26F /* RotationStore.swift */; };
+		69AFA231214FD8330075A26F /* TextRotationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA22F214FD8330075A26F /* TextRotationRule.swift */; };
 		69C274F3214EE946009D2AA8 /* Wordy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C274F2214EE946009D2AA8 /* Wordy.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,14 +35,14 @@
 		695E608A21498FF8001F32EF /* TextRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRotation.swift; sourceTree = "<group>"; };
 		695E608C214990AF001F32EF /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		695E608E21499111001F32EF /* TextChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChange.swift; sourceTree = "<group>"; };
-		695E6090214991C0001F32EF /* TextRotationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRotationRule.swift; sourceTree = "<group>"; };
-		695E609221499214001F32EF /* RotationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationStore.swift; sourceTree = "<group>"; };
 		695E6096214996D8001F32EF /* SubstringFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringFinder.swift; sourceTree = "<group>"; };
 		695E609B21499992001F32EF /* CaseEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseEffect.swift; sourceTree = "<group>"; };
 		695E609D2149A794001F32EF /* RotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationEffect.swift; sourceTree = "<group>"; };
 		695E609F2149AD5B001F32EF /* InversionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InversionEffect.swift; sourceTree = "<group>"; };
 		69AFA228214FD6F50075A26F /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		69AFA22A214FD7250075A26F /* TransliterationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransliterationManager.swift; sourceTree = "<group>"; };
+		69AFA22E214FD8330075A26F /* RotationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationStore.swift; sourceTree = "<group>"; };
+		69AFA22F214FD8330075A26F /* TextRotationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRotationRule.swift; sourceTree = "<group>"; };
 		69C274F2214EE946009D2AA8 /* Wordy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,10 +140,26 @@
 		695E608421498F09001F32EF /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				695E6090214991C0001F32EF /* TextRotationRule.swift */,
-				695E609221499214001F32EF /* RotationStore.swift */,
+				69AFA22D214FD8330075A26F /* Rotation */,
+				69AFA22C214FD8330075A26F /* Transliteration */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		69AFA22C214FD8330075A26F /* Transliteration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transliteration;
+			sourceTree = "<group>";
+		};
+		69AFA22D214FD8330075A26F /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				69AFA22E214FD8330075A26F /* RotationStore.swift */,
+				69AFA22F214FD8330075A26F /* TextRotationRule.swift */,
+			);
+			path = Rotation;
 			sourceTree = "<group>";
 		};
 		69C274F1214EE934009D2AA8 /* Bridge */ = {
@@ -233,18 +249,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				695E6091214991C0001F32EF /* TextRotationRule.swift in Sources */,
 				695E608F21499111001F32EF /* TextChange.swift in Sources */,
 				695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */,
 				69AFA229214FD6F50075A26F /* Language.swift in Sources */,
+				69AFA230214FD8330075A26F /* RotationStore.swift in Sources */,
 				695E608D214990AF001F32EF /* Effect.swift in Sources */,
-				695E609321499214001F32EF /* RotationStore.swift in Sources */,
 				695E609C21499992001F32EF /* CaseEffect.swift in Sources */,
 				69C274F3214EE946009D2AA8 /* Wordy.swift in Sources */,
 				695E608721498F45001F32EF /* SubstringLocation.swift in Sources */,
 				695E608521498F09001F32EF /* EffectManager.swift in Sources */,
 				69AFA22B214FD7250075A26F /* TransliterationManager.swift in Sources */,
 				695E608B21498FF8001F32EF /* TextRotation.swift in Sources */,
+				69AFA231214FD8330075A26F /* TextRotationRule.swift in Sources */,
 				695E609E2149A794001F32EF /* RotationEffect.swift in Sources */,
 				695E608921498FA7001F32EF /* TextCase.swift in Sources */,
 				695E6097214996D8001F32EF /* SubstringFinder.swift in Sources */,
