@@ -172,6 +172,35 @@ The `Language` type is used for transliterations. Possible values:
 - `english`
 - `russian`
 
+### Plugins
+
+You can extend the functionality of `Wordy` without making changes to the library. Instead of sending pull request, simply create your own plugin.
+
+Each plugin is a subclass of the class named `Plugin`. Take a look at the example below:
+
+```java
+class Repeat: Plugin {
+
+    override func result() -> String {
+        return self.sourceText
+            + self.sourceText
+    }
+}
+```
+
+This is a plugin that repeats the source text two times. All that you need to implement is the `result()` method that returns `String` with filtered text. It is the core of your plugin's implementation where you should put the logic. To access the source text, simply use `self.sourceText`.
+
+Now let's try to use the plugin:
+
+```java
+let repeatedText = Wordy.plugin(Repeat.self, for: "Test.")
+    .result()
+
+print(repeatedText) // "Test.Test."
+```
+
+As you can see, creating and using plugins for `Wordy` is quite easy. You can publish your plugins as separate library or send as a pull request if you want it to be included in the library after reviewal process.
+
 ## License
 
 `Wordy` is available under the Apache 2.0 license. See the [LICENSE](./LICENSE) file for more info.
