@@ -8,6 +8,32 @@
 
 import Foundation
 
-public protocol Effect {
-    func filteredText(from sourceText: String) -> String
+public class Effect {
+    
+    // MARK: Class variables & properties
+    
+    // MARK: Public class methods
+    
+    // MARK: Private class methods
+    
+    // MARK: Initializers
+    
+    init() {
+    }
+    
+    // MARK: Deinitializer
+    
+    deinit {
+    }
+    
+    // MARK: Object variables & properties
+    
+    // MARK: Public object methods
+    
+    public func filteredText(from sourceText: String) -> String {
+        return ""
+    }
+    
+    // MARK: Private object methods
+    
 }
