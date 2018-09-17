@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class InversionEffect {
+public class InversionEffect: Effect {
     
     // MARK: Class variables & properties
     
@@ -18,7 +18,8 @@ public class InversionEffect {
     
     // MARK: Initializers
     
-    public init() {
+    public override init() {
+        super.init()
     }
     
     // MARK: Deinitializer
@@ -30,13 +31,7 @@ public class InversionEffect {
     
     // MARK: Public object methods
     
-    // MARK: Private object methods
-    
-}
-
-extension InversionEffect: Effect {
-    
-    public func filteredText(from sourceText: String) -> String {
+    public override func filteredText(from sourceText: String) -> String {
         var resultText = ""
         
         for letterIndex in stride(from: sourceText.count - 1, through: 0, by: -1) {
@@ -47,4 +42,7 @@ extension InversionEffect: Effect {
         
         return resultText
     }
+    
+    // MARK: Private object methods
+    
 }
