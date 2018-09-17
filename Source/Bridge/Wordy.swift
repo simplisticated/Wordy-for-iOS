@@ -18,6 +18,14 @@ public class Wordy {
         return EffectManager(sourceText: sourceText)
     }
     
+    public class func transliterate(from sourceLanguage: Language, to targetLanguage: Language) -> TransliterationManager {
+        return TransliterationManager(from: sourceLanguage, to: targetLanguage)
+    }
+    
+    public class func plugin<T: Plugin>(_ type: T.Type, for sourceText: String) -> T {
+        return T(sourceText: sourceText)
+    }
+    
     // MARK: Private class methods
     
     // MARK: Initializers
