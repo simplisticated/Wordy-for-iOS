@@ -46,6 +46,7 @@ Let's start with a very simple example of text effect:
 let filteredText = Wordy.effects(for: "Hi!")
     .apply(effect: InversionEffect())
     .result
+
 print(filteredText) // "!iH"
 ```
 
@@ -57,6 +58,7 @@ In the example above, the `InversionEffect` will be applied to the entire string
 let filteredText = Wordy.effects(for: "Hi!")
     .apply(effect: InversionEffect(), startIndex: 0, endIndex: 1)
     .result
+
 print(filteredText) // "iH!"
 ```
 
@@ -67,6 +69,7 @@ let filteredText = Wordy.effects(for: "This text will be rotated")
     .apply(effect: RotationEffect(rotation: .inverted))
     .apply(effect: InversionEffect())
     .result
+
 print(filteredText) // "рǝʇɐʇоɹ ǝq llıм ʇxǝʇ sıɥʇ"
 ```
 
@@ -126,6 +129,22 @@ turns into
 InversionEffect()
 ```
 
+### Transliteration
+
+Example of transliteration:
+
+```java
+let transliteratedText = Wordy.transliterate(from: .russian, to: .english)
+    .result(for: "Привет!")
+
+print(transliteratedText) // "Privet!", which means "Hi!"
+```
+
+Currently supported languages are:
+
+- English
+- Russian
+
 ### Options
 
 #### Text Case
@@ -145,6 +164,13 @@ InversionEffect()
 - `normal`: Forces all symbols to be rotated to normal position. It means that `ʎ` would become `y` and `h` would stay `h`.
 - `upsideDown`: Forces all symbols to be rotated upside down. In this case, `y` would turn into `ʎ`, but `ɥ` wouldn't change at all.
 - `inverted`: Normal symbols are forced to be rotated meanwhile rotated symbols become normal. So, `y` becomes `ʎ` and `ɥ` turns into `h`.
+
+#### Language
+
+The `Language` type is used for transliterations. Possible values:
+
+- `english`
+- `russian`
 
 ## License
 
