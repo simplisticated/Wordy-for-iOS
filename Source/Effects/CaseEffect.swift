@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class CaseEffect {
+public class CaseEffect: Effect {
     
     // MARK: Class variables & properties
     
@@ -33,13 +33,7 @@ public class CaseEffect {
     
     // MARK: Public object methods
     
-    // MARK: Private object methods
-    
-}
-
-extension CaseEffect: Effect {
-    
-    public func filteredText(from sourceText: String) -> String {
+    public override func filteredText(from sourceText: String) -> String {
         switch self.textCase {
         case .allUpper:
             return sourceText.uppercased()
@@ -105,5 +99,7 @@ extension CaseEffect: Effect {
             }
         }
     }
+    
+    // MARK: Private object methods
     
 }
