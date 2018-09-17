@@ -18,7 +18,7 @@ open class Plugin {
     
     // MARK: Initializers
     
-    public init(sourceText: String) {
+    public required init(sourceText: String) {
         self.sourceText = sourceText
     }
     
