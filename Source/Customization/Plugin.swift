@@ -33,7 +33,7 @@ open class Plugin {
     
     // MARK: Public object methods
     
-    public func result() -> String {
+    open func result() -> String {
         return ""
     }
     
