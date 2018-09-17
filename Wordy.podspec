@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Wordy"
-  s.version      = "1.2"
+  s.version      = "1.4"
   s.summary      = "String processor for iOS"
 
   # This description is used to generate tags and improve search results.
