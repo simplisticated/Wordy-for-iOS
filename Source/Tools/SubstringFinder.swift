@@ -44,6 +44,10 @@ internal class SubstringFinder {
     }
     
     public func substring(from location: SubstringLocation) -> String {
+        guard location.startIndex <= location.endIndex else {
+            return ""
+        }
+        
         let startIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: location.startIndex)
         let endIndex = self.sourceText.index(self.sourceText.startIndex, offsetBy: location.endIndex)
         return String(self.sourceText[startIndex...endIndex])
