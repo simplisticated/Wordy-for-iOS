@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class RotationEffect {
+public class RotationEffect: Effect {
     
     // MARK: Class variables & properties
     
@@ -36,13 +36,7 @@ public class RotationEffect {
     
     // MARK: Public object methods
     
-    // MARK: Private object methods
-    
-}
-
-extension RotationEffect: Effect {
-    
-    public func filteredText(from sourceText: String) -> String {
+    public override func filteredText(from sourceText: String) -> String {
         var filteredText = ""
         let textLength = sourceText.count
         
@@ -96,5 +90,7 @@ extension RotationEffect: Effect {
         
         return filteredText
     }
+    
+    // MARK: Private object methods
     
 }
