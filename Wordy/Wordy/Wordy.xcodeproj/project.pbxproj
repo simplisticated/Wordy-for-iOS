@@ -24,6 +24,7 @@
 		69AFA231214FD8330075A26F /* TextRotationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA22F214FD8330075A26F /* TextRotationRule.swift */; };
 		69AFA233214FD86B0075A26F /* TransliterationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA232214FD86B0075A26F /* TransliterationRule.swift */; };
 		69AFA235214FD8BE0075A26F /* TransliterationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA234214FD8BE0075A26F /* TransliterationStore.swift */; };
+		69AFA238214FEE280075A26F /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFA237214FEE280075A26F /* Plugin.swift */; };
 		69C274F3214EE946009D2AA8 /* Wordy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C274F2214EE946009D2AA8 /* Wordy.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		69AFA22F214FD8330075A26F /* TextRotationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRotationRule.swift; sourceTree = "<group>"; };
 		69AFA232214FD86B0075A26F /* TransliterationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransliterationRule.swift; sourceTree = "<group>"; };
 		69AFA234214FD8BE0075A26F /* TransliterationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransliterationStore.swift; sourceTree = "<group>"; };
+		69AFA237214FEE280075A26F /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
 		69C274F2214EE946009D2AA8 /* Wordy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				695E608421498F09001F32EF /* Data */,
 				695E608221498F09001F32EF /* Effects */,
 				695E607F21498F09001F32EF /* Tools */,
+				69AFA236214FEE180075A26F /* Customization */,
 				69C274F1214EE934009D2AA8 /* Bridge */,
 			);
 			name = Source;
@@ -166,6 +169,14 @@
 				69AFA22E214FD8330075A26F /* RotationStore.swift */,
 			);
 			path = Rotation;
+			sourceTree = "<group>";
+		};
+		69AFA236214FEE180075A26F /* Customization */ = {
+			isa = PBXGroup;
+			children = (
+				69AFA237214FEE280075A26F /* Plugin.swift */,
+			);
+			path = Customization;
 			sourceTree = "<group>";
 		};
 		69C274F1214EE934009D2AA8 /* Bridge */ = {
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AFA238214FEE280075A26F /* Plugin.swift in Sources */,
 				695E608F21499111001F32EF /* TextChange.swift in Sources */,
 				695E60A02149AD5B001F32EF /* InversionEffect.swift in Sources */,
 				69AFA229214FD6F50075A26F /* Language.swift in Sources */,
